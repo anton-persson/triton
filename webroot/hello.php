@@ -21,7 +21,7 @@ $triton['main'] = <<<HTML
 HTML;
 
 $triton['footer'] = <<<HTML
-<footer><span class='sitefooter'>Copyright (c) Anton Persson (anton.persson@outlook.com) | <a href='https://github.com/mosbth/Anax-base'>Anax på GitHub</a> | <a href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn</a></span></footer>
+<footer><span class='sitefooter'>Copyright (c) Anton Persson (anton.persson@outlook.com) | <a href='https://github.com/anton-persson/triton'>Triton på GitHub</a> | <a href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn</a></span></footer>
 HTML;
 
 
