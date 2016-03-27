@@ -48,21 +48,45 @@ $triton = array();
  */
 $triton['lang']         = 'sv';
 $triton['title_append'] = ' | Triton en webbtemplate';
+
+/**
+ * The navbar
+ *
+ */
+//$triton['navbar'] = null; // To skip the navbar
+$triton['navbar'] = array(
+  'class' => 'nb-plain',
+  'items' => array(
+    'hem'         => array('text'=>'Hem',         'url'=>'me.php',          'title' => 'Min presentation om mig själv'),
+    'redovisning' => array('text'=>'Redovisning', 'url'=>'redovisning.php', 'title' => 'Redovisningar för kursmomenten'),
+    'kallkod'     => array('text'=>'Källkod',     'url'=>'source.php',      'title' => 'Se källkoden'),
+  ),
+  'callback_selected' => function($url) {
+    if(basename($_SERVER['SCRIPT_FILENAME']) == $url) {
+      return true;
+    }
+  }
+);
+
+
+/**
+ * Theme related settings.
+ *
+ */
 //$triton['stylesheet'] = 'css/style.css';
 $triton['stylesheets'] = array('css/style.css');
 $triton['favicon']    = 'favicon.ico';
-$triton['modernizr'] = 'js/modernizr.js';
 
 /**
  * Settings for JavaScript.
  *
  */
+$triton['modernizr'] = 'js/modernizr.js';
 $triton['jquery'] = '//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js';
 //$triton['jquery'] = null; // To disable jQuery
 $triton['javascript_include'] = array();
-// Add js/main.js for inklusion
-$triton['javascript_include'][] = 'js/main.js';
-$triton['javascript_include'][] = 'js/other.js';
+//$triton['javascript_include'] = array('js/main.js'); // To add extra javascript files
+//$triton['javascript_include'] = array('js/other.js'); // To add extra javascript files
 
 
 /**
