@@ -1,1 +1,1 @@
-Triton is a PHP-boilerplate/framework for small websites. Triton was built by Anton Persson (anton.persson@outlook.com) as part of a course in object oriented PHP in march 2016. It was also published at GitHub: https://github.com/mosbth/Triton-base.
+Triton is a PHP-boilerplate/framework for small websites. Triton was built by Anton Persson (anton.persson@outlook.com) as part of a course in object oriented PHP in march 2016. It was also published at GitHub: https://github.com/anton-persson/triton.
