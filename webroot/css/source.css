@@ -24,7 +24,7 @@
   border-bottom: 0;
   background: #eee;
   padding: 0.5em 0.5em 0.5em 0.5em;
-} 
+}
 
 .src-rows {
   float: left;
@@ -34,13 +34,13 @@
   border-right: none;
   background: #eee;
   padding: 0.5em 0.5em 0.5em 0.5em;
-} 
+}
 
 .src-rows a:link,
 .src-rows a:visited,
 .src-rows a:hover,
-.src-rows a:active  { 
-  text-decoration: none; 
+.src-rows a:active  {
+  text-decoration: none;
   color: inherit;
 }
 

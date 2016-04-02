@@ -18,7 +18,7 @@ jQuery(function() {
       zindex = 0,
       pause = false,
       durationSlide = 4000,
-      durationPause = 9000,
+      durationPause = 4000,
       durationFirst = durationPause,
       easing='linear',
 
@@ -98,6 +98,6 @@ jQuery(function() {
    *
    */
   //slideShow.init();
-  slideShow.init({"cssId" : "#slideshow", "durationPause" : 4000, "durationSlide" : 2000, "durationFirst" : 4000});
+  slideShow.init({"cssId" : "#slideshow", "durationPause" : 4000, "durationSlide" : 4000, "durationFirst" : 4000});
 
 });

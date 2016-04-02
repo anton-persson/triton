@@ -49,19 +49,37 @@ $triton = array();
 $triton['lang']         = 'sv';
 $triton['title_append'] = ' | Triton en webbtemplate';
 
+$triton['header'] = <<<EOD
+<img class='sitelogo' src='img/logo.png' alt='Triton Logo'/>
+<span class='sitetitle'>Triton Webbmall</span>
+<span class='siteslogan'>Me-sida för Anton Persson i kursen OOPHP</span>
+EOD;
+
+$triton['footer'] = <<<HTML
+<footer><span class='sitefooter'>Copyright &copy; 2016 Anton Persson (<a href="mailto:anton.persson@outlook.com">anton.persson@outlook.com</a>) <a class="btn btn-success" href='https://github.com/anton-persson/triton'>Triton på GitHub</a> <a class="btn btn-primary" href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn Validator</a></span></footer>
+HTML;
+
+$triton['byline'] = <<<EOD
+<footer class="byline clearfix">
+    <img src="img/me.jpg" class="img-responsive img-circle pull-left" alt="Bild på Anton">
+    <h3>Anton Persson</h3>
+    <p>Pluggar webbprogrammering på BTH, driver samtidigt en egen firma och jobbar med webbdesign, grafisk design och 3d-modellering/visualisering.</p>
+</footer>
+EOD;
+
 /**
  * The navbar
  *
  */
 //$triton['navbar'] = null; // To skip the navbar
 $triton['navbar'] = array(
-  'class' => 'nb-plain',
+  'class' => 'navbar navbar-default',
   'items' => array(
     'hem'         => array('text'=>'Hem',         'url'=>'me.php',          'title' => 'Min presentation om mig själv'),
     'redovisning' => array('text'=>'Redovisning', 'url'=>'redovisning.php', 'title' => 'Redovisningar för kursmomenten'),
     'kallkod'     => array('text'=>'Källkod',     'url'=>'source.php',      'title' => 'Se källkoden'),
   ),
-  'callback_selected' => function($url) {
+  'callback' => function($url) {
     if(basename($_SERVER['SCRIPT_FILENAME']) == $url) {
       return true;
     }
@@ -82,7 +100,7 @@ $triton['favicon']    = 'favicon.ico';
  *
  */
 $triton['modernizr'] = 'js/modernizr.js';
-$triton['jquery'] = '//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js';
+$triton['jquery_incl'] = 'https://code.jquery.com/jquery-2.2.2.min.js';
 //$triton['jquery'] = null; // To disable jQuery
 $triton['javascript_include'] = array();
 //$triton['javascript_include'] = array('js/main.js'); // To add extra javascript files

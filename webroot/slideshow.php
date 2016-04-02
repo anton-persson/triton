@@ -11,8 +11,8 @@ $triton['javascript_include'][] = 'js/slideshow.js';
 // Do it and store it all in variables in the Triton container.
 $triton['title'] = "Slideshow för att testa JavaScript i Triton";
 $triton['main'] = <<<EOD
-<div id="slideshow" class='slideshow' data-host="" data-path="img/me/" data-images='["me-1.jpg", "me-2.jpg", "me-4.jpg", "me-6.jpg"]'>
-<img src='img/me/me-6.jpg' width='950px' height='180px' alt='Me'/>
+<div id="slideshow" class='slideshow' data-host="" data-path="img/slideshow/" data-images='["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"]'>
+<img src='img/slideshow/01.jpg' width='950' height='180' alt='Slideshow'/>
 </div>
 <h1>En slideshow med JavaScript</h1>
 <p>Detta är en exempelsida som visar hur Triton fungerar tillsammans med JavaScript.</p>

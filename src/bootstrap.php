@@ -28,3 +28,13 @@ function myAutoloader($class) {
   }
 }
 spl_autoload_register('myAutoloader');
+
+
+/**
+ * Dump all the contents of a variable.
+ *
+ * @param mixed $a as the variabel/array/object to dump.
+ */
+ function dump($a) {
+   echo "<pre>" . htmlentities(print_r($array, 1)) . "</pre>";
+ }
